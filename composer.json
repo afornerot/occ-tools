@@ -1,0 +1,15 @@
+{
+    "name": "OCC Tools",
+    "description": "Tools command for Nextcloud",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Arnaud FORNEROT"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}

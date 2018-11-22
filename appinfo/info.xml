@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>occtools</id>
+    <name>OCC Tools</name>
+    <summary>Tools for manage Nextcloud</summary>
+    <description><![CDATA[Some Command Line for manage Nextcloud
+- synchronize User LDAP]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="afornerot@cadoles.com" >Arnaud FORNEROT</author>
+    <namespace>OCCTools</namespace>
+    <category>organization</category>
+    <bugs>https://github.com/afornerot/occ-tools</bugs>
+    <dependencies>
+        <nextcloud min-version="14" max-version="14"/>
+    </dependencies>
+	<commands>
+		<command>OCA\OCCTools\Command\Test</command>
+	</commands>    
+	<background-jobs>
+		<job>OCA\OCCTools\Jobs\Sync</job>
+	</background-jobs>    
+</info>
